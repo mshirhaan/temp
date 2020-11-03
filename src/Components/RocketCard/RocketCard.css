@@ -1,0 +1,32 @@
+.rocketCard {
+  background-color: white;
+  margin: 10px;
+  padding: 10px 5px;
+  height: 300px;
+  width: 200px;
+}
+
+.rocketCard img {
+  width: 170px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  background-color: lightgray;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rocketCard h4 {
+  height: 30px;
+  margin-left: 12px;
+}
+.rocket__info {
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+@media (max-width: 700px) {
+  .rocketCard {
+    width: 220px;
+  }
+}

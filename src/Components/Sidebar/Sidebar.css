@@ -1,0 +1,87 @@
+.sidebar {
+  background-color: white;
+  flex: 0.2;
+  padding: 10px;
+  margin: 10px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+.sidebar h3 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.sidebar h4 {
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1.5px solid lightgray;
+}
+
+.sidebar__filterYears {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+.sidebar__landing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+.sidebar__launch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+.sidebar__launchButtons button,
+.sidebar__landingButtons button {
+  margin: 10px 30px;
+  background-color: rgb(112, 226, 112);
+  color: black;
+  font-weight: 400;
+  border: none;
+  width: 50px;
+  border-radius: 3px;
+  padding: 5px;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+
+.sidebar__launchButtons button:hover,
+.sidebar__landingButtons button:hover {
+  transform: scale(1.07);
+}
+
+.selected {
+  background-color: darkgreen !important;
+  color: white !important;
+  border: none !important;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 210px;
+    text-align: center;
+  }
+  .sidebar__filterYears {
+  }
+  .sidebar__launchButtons button,
+  .sidebar__landingButtons button {
+    width: 40px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  /* .sidebar {
+    width: 195px;
+  } */
+  /* .sidebar__launchButtons button,
+  .sidebar__landingButtons button {
+    width: 37px;
+  } */
+}
